@@ -1,0 +1,20 @@
+@media(max-width: 1000px)
+{
+  body{
+  min-height: 150vh;
+}
+
+.sidebar{
+  max-width: 15rem;
+  position:fixed;
+  background-color:#339fff;
+  right: 100px;
+  top:0px;
+  left:0px;
+  bottom:0px;
+}
+
+.content{
+  margin-left: 20rem;
+}
+}
