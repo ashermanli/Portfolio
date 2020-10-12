@@ -1,62 +1,117 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   min-height: 150vh;
   margin: 0%;
+  background-color: gray;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: .05em;
 }
+
+
 
 .sidebar {
   display: flex;
   position: fixed;
   max-width: 20%;
-  min-width: 300px;
-  background-color: #339fff;
+  min-width: 400px;
+  background-color: #3374ff;
   right: 100px;
   top: 0px;
   left: 0px;
   bottom: 0px;
+
 }
 
-.sidebar-content {
-  width: auto;
-  align-items:flex-end;
-  margin: auto;
+.sidebar-wrapper {
+  margin: 30% auto;
 }
 
-.side-links {
+.side-links ul{
+  align-items: center;
+  padding:0px;
+}
+
+
+.side-links li {
+  background-color: #3341ff;
+  /* width: 25%; */
   list-style: none;
-  margin-top: 1rem;
+  margin: 1rem auto;
   display: flex;
   flex-direction:column;
   align-items: center;
-  margin-bottom: 1rem;
+  font-size: 2rem;
   /* text-align: center; */
 }
 
+.side-links li:hover{
+  background-color: black;
+}
+
+.side-links a{
+  margin: 0;
+  color:white;
+}
+
 .portrait {
-  border-radius: 50%;
-  max-height: 200px;
-  max-width: 200px;
+  margin-bottom: 2.5em;
+  border-radius: 5%;
+  max-height: 300px;
+  max-width: 300px;
   align center;
 }
 
 #welcome-section {
   border-style: solid;
-  border-color: gray;
+  border-color: black;
   padding: 20px;
   margin-top: 0px;
-  padding: 0%;
-  height: 99vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#projects{
+  height: 100vh;
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+
+}
+
+.project-tile{
+  height: 50vh;
+  margin:10px;
+  border-style: solid;
+  border-color: black;
+}
+
+.project-tile a{
+  background-color: yellow;
+  width:25%;
+  display: flex;
+  align-self: flex-end;
+
+}
+
+
 .content {
   padding: .5%;
-  margin-left: 20vw;
+  margin-left: 400px;
 }
 
 @media screen (device-width:375px) {
   body {
     color: black;
   }
+}
+
+#contact{
+  height: 100vh;
+  border-style: solid;
+  border-color: black;
 }
