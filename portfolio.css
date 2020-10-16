@@ -5,17 +5,19 @@ html{
 :root{
   --sidebar-color: #3341ff;
   --sb-accent-color: #3365ff;
-  /* --content-bg-color: #F9F9FA; */
-  --content-bg-color: gray;
+  --content-bg-color: #F7F7F7;
+  /* --content-bg-color: gray; */
   --content-accent-color:
 }
 
 body {
   min-height: 150vh;
   margin: 0%;
-  background-color: var(--content-bg-color);
+  /* background-color: var(--content-bg-color); */
+  background-image: linear-gradient(330deg, #3a3d40 0%, gray 100%);
   font-family: "Titillium Web", sans-serif;
   letter-spacing: .05em;
+  color:white;
 }
 
 a{
@@ -23,7 +25,17 @@ a{
   color:white;
 }
 
+h1{
+  font-size: 5rem;
+}
 
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.75rem;
+}
 
 .sidebar {
   /* display: flex; */
@@ -65,13 +77,13 @@ a{
 
 
 .side-links li {
-  width: 7.5em;
+  width: 10em;
   text-align: center;
   background-color: var(--sb-accent-color);
   list-style: none;
   margin: 5% auto;
   font-size: 1.75rem;
-  border: 1px solid;
+  border: 1px solid black;
   border-radius: 3px;
 }
 
@@ -81,10 +93,10 @@ a{
 
 .side-links a{
   margin: 0;
+  display: block;
 }
 
 .personal-info{
-  color:white;
   font-size: 1.15rem;
   margin-top: 2.5rem;
 }
@@ -113,22 +125,27 @@ a{
 .project-tile{
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   height: 50vh;
   margin:10px;
   border-style: solid;
   border-color: black;
 }
 
+
+
 .project-tile a{
   background-color: var(--sb-accent-color);
-  color: white;
+  align-self: flex-end;
+  text-align: center;
   border: 1px solid black;
   border-radius: 3px;
   width:25%;
+  margin: 10px;
+}
 
-
-
+.project-tile a:hover{
+  background-color: black;
 }
 
 
