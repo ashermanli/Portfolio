@@ -38,7 +38,6 @@ h3{
 }
 
 .sidebar {
-  /* display: flex; */
   position: fixed;
   width: 350px;
   background-color: var(--sidebar-color);
@@ -57,7 +56,6 @@ h3{
   display:flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .portrait {
@@ -99,6 +97,14 @@ h3{
 .personal-info{
   font-size: 1.15rem;
   margin-top: 2.5rem;
+  color:white;
+  align-self: flex-end;
+}
+
+.personal-entry{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 
@@ -107,11 +113,13 @@ h3{
   border: solid black;
   padding: 20px;
   margin-top: 0px;
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
 }
+
 
 #projects{
   height: 100vh;
@@ -124,18 +132,29 @@ h3{
 
 .project-tile{
   display: flex;
+  padding:10px;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
   height: 50vh;
   margin:10px;
   border-style: solid;
   border-color: black;
 }
 
+.project-tile img{
+  height:50%;
+  width:100%;
+  
+}
+
 
 
 .project-tile a{
   background-color: var(--sb-accent-color);
+  justify-self: flex-end;
+  margin-top: auto;
   align-self: flex-end;
   text-align: center;
   border: 1px solid black;
@@ -156,140 +175,15 @@ h3{
 
 
 
-#contact{
-  height: 100vh;
-  border-style: solid;
-  border-color: black;
-}
-
-/* @media (max-width: 1800px){
-  html{
-    scroll-behavior: smooth;
-  }
-  body {
-    min-height: 150vh;
-    margin: 0%;
-    background-color: gray;
-    font-family: "Titillium Web", sans-serif;
-    letter-spacing: .05em;
-  }
-
-
-
-  .sidebar {
-
-    position: fixed;
-    width: 350px;
-    background-color: #3374ff;
-    right: 100px;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-
-  }
-
-  .sidebar-wrapper{
-    margin: 1.5em;
-  }
-
-  .sidebar-content{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-
-  .side-links ul{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-  }
-
-
-  .side-links li {
-    width: 5em;
-    text-align: center;
-    background-color: #3341ff;
-    list-style: none;
-    margin: 5% auto;
-    font-size: 1.75rem;
-  }
-
-  .side-links li:hover{
-    background-color: black;
-  }
-
-  .side-links a{
-    margin: 0;
-    color:white;
-  }
-
-
-
-  #welcome-section {
-    border-style: solid;
-    border-color: black;
-    padding: 20px;
-    margin-top: 0px;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #projects{
-    height: 100vh;
-    display:flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-
-  }
-
-  .project-tile{
-    height: 50vh;
-    margin:10px;
-    border-style: solid;
-    border-color: black;
-  }
-
-  .project-tile a{
-    background-color: yellow;
-    width:25%;
-    display: flex;
-    align-self: flex-end;
-
-  }
-
-
-  .content {
-    padding: .5%;
-    margin-left: 350px;
-  }
-
-
-
-  #contact{
-    height: 100vh;
-    border-style: solid;
-    border-color: black;
-  }
-
-} */
 
 @media (max-width:1000px) {
+  /* Sidebar is now a top bar */
   .sidebar {
     position: fixed;
-    max-height: 150px;
+    max-height: 25%;
     width: 100vw;
-    background-color: #3374ff;
-    right: 100px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    background-color: var(--sidebar-color);
+   
   }
 
   .sidebar-wrapper{
@@ -299,15 +193,15 @@ h3{
   .sidebar-content{
     display:flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-center;
+    justify-content: flex-start;
   }
 
   .side-links ul{
     display:flex;
     flex-direction: row;
     align-items:flex-end;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0;
   }
 
@@ -341,4 +235,24 @@ h3{
     flex-shrink: 0;
     margin-right: 20px;
   }
+
+  .personal-info{
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    color:white;
+    align-self: flex-end;
+    justify-self: center;
+  }
+
+  .personal-entry{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .personal-entry p{
+    display:none;
+  }
+
+  
 }
