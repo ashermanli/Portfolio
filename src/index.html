@@ -5,44 +5,160 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="tailwind.css">
+  <link rel="stylesheet" href="svg/font-mfizz-2.4.1/dist/font-mfizz.css">
   <title>Document</title>
 </head>
-<body class="h-screen w-screen bg-gray-600">
+<body class="m-0 bg-gray-900 text-gray-300">
+  <div class="h-screen">
     <!-- Navigation Bar -->
-    <nav class="w-screen h-16 top-0 z-10 fixed flex flex-row justify-around items-center bg-gray-800 text-white">
-      <div class='mx-16 text-white text-6xl'>Abraham <span class="text-red-700">Saucedo</span></div>
-      <ul class="w-auto flex flex-row">
-        <li class="px-10 text-5xl ">About Me</li>
-        <li class="px-10 text-5xl">Skills</li>
-        <li class="px-10 text-5xl">Projects</li>
-        <li class="px-10 text-5xl">Contact</li>
+    <nav class=" w-full h-16 top-0 z-10 fixed flex flex-row justify-around items-center bg-gray-800 text-gray-300">
+      <div class='mx-16 text-6xl'>Abraham Saucedo</div>
+      <ul class="w-auto flex flex-row gap-14">
+        <li class=" text-5xl ">About Me</li>
+        <li class=" text-5xl">Skills</li>
+        <li class=" text-5xl">Projects</li>
+        <li class=" text-5xl">Contact</li>
       </ul>
     </nav>
     <!-- Landing Page -->
     <div class="w-full h-screen z-0 flex flex-col items-center justify-center">
       <div>
-        <h1 class=" text-white text-8xl text-justify">Hi, I am a Abraham.</h1>
-        <h2 class="text white text-6xl">An aspiring web developer</h2>
+        <h1 class="text-8xl text-justify">Hi, I am a <span class="text-yellow-600">Abraham</span>.</h1>
+        <h2 class="text-6xl">An aspiring web developer</h2>
       </div>
     </div>
     <!-- About Me Section -->
-    <div class="w-full h-2/3 z-0 flex flex-row justify-end">
-      <div class="h-full w-2/3 ">
-        <h2 class="text-red-600 text-6xl underline text-center">About <span class="text-white">me</span></h2>
+    <div class="w-full h-2/3 z-0 flex flex-row justify-start bg-gray-800">
+      <div class="h-full w-2/3 mr-20">
+        <h2 class="text-yellow-600 text-6xl text-center"><spa class="underline">About</spa> <span class="text-white">Me</span></h2>
         <p class=" p-20 text-gray-100 text-3xl text-justify">I am an aspiring full stack web developer who graduated
           from The University of Texas at El Paso (UTEP) with a Bachelors in Computer Science.  Ever since i started
           my journey in computer science I have had a passion for web development.  I am constantly looking to 
-          improve my knowledge and skills and apply what I learn into the the pages and apps I create.  
+          improve my knowledge and skills and apply what I learn into the pages and apps I create.  
+          Recently I have been learning to create single page applications with the MERN stack by following
+          along with the Full Stack Open course.  Being a developer allows me to exercise my creativity and I hope to become a proficient developer and designer.  Outside of web development you will find I have a passion 
+          for creating music and audio production. 
         </p>
       </div> 
-      <div class="bg-gray-800 h-full w-1/3 flex items-center justify-center ">
-        <img src="images/Abraham Saucedo466(cropped).jpg" alt="A picture of Abraham" class='w-full h-full object-cover object-top'>
+      <!-- Portrait -->
+      <div class="h-full w-1/4">
+        <img src="images/Abraham Saucedo466(cropped).jpg" alt="A picture of Abraham" class='w-full h-full border-2 border-yellow-600 rounded-xl object-cover object-top'>
       </div>
     </div>
     <!-- Skills Section -->
-    <div class="w-full h-1/2 z-0 flex flex-row justify-start">
-      <div class="bg-gray-800 h-full w-1/2">left Side</div>
-      <div class="h-full w-1/2"> right side</div>
+    <div class="w-full h-full z-0 p-10">
+        <h2 class="mb-10 text-gray-200 text-6xl text-center">My <span class="text-yellow-600 underline">Skills</span></h2>
+        <div class=" w-full h-10 flex flex-col gap-y-2 items-center text-yellow-600">
+            <!-- Frontend -->
+            <h3 class="text-5xl">Frontend</h3>
+            <div class="w-full p-5 h-40 flex flex-row items-center justify-center gap-5">
+              <div class="w-40"><i class="icon-html5 text-9xl"><p class="text-lg">HTML5</p></i></div>
+              <div class="w-40"><i class='icon-css3 text-9xl'><p class="text-lg">CSS3</p></i></div>
+              <div class="w-40"><i class="icon-javascript text-9xl"><p class="text-lg">Javascript</p></i></div>
+              <div class="w-40"><i class="icon-reactjs text-9xl"><p class="text-lg">Reactjs</p></i></div>
+              <div class="w-40"><i class="icon-bootstrap text-9xl"><p class="text-lg">Bootstrap</p></i></div>
+          </div>
+            <!-- Backend -->
+            <h3 class="text-5xl">Backend</h3>
+            <div class="w-full p-5 h-40 flex flex-row justify-center gap-5">
+              <div class="w-40"><i class="icon-nodejs text-9xl"><p class="text-lg">Nodejs</p></i></div>
+              <div class="w-40"><i class="icon-php text-9xl"><p class="text-lg">PHP</p></i></div>
+              <div class="w-40"><i class="icon-python text-9xl"><p class="text-lg">Python</p></i></div>
+              <div class="w-40"><i class="icon-mongodb text-9xl"><p class="text-lg">MongoDB</p></i></div>
+              <div class="w-40"><i class="icon-mysql text-9xl"><p class="text-lg">MySQL</p></i></div>
+          </div>
+            <!-- Miscellaneous -->
+            <h3 class="text-5xl">Miscellaneous</h3>
+            <div class="w-full p-5 h-40 flex flex-row justify-center gap-5">
+              <div class="w-40"><i class="icon-git text-9xl"><p class="text-lg">Git</p></i></div>
+              <div class="w-40"><i class="icon-npm text-9xl"><p class="text-lg">NPM</p></i></div>
+              <div class="w-40"><i class="icon-ubuntu text-9xl"><p class="text-lg">Ubuntu</p></i></div>
+              <div class="w-40"><i class="icon-heroku text-9xl"><p class="text-lg">Heroku</p></i></div>
+          </div>
+        </div>
+      
     </div>
+    <!-- Projects Section -->
+    <div class="w-full h-auto p-10 bg-gray-800">
+      <h2 class="mb-10 text-6xl text-center text-yellow-600 underline">Projects</h2>
+      <!-- Projects container -->
+      <div class="w-full h-full flex flex-col gap-y-10 items-center">
+        <!-- Project Card -->
+        <div class="w-5/6 h-3/5 flex flex-row justify-around border-2 border-solid border-yellow-700 rounded-lg">
+          <!-- Description -->
+          <div class="w-4/6 p-5 flex flex-col items-center justify-start text-yellow-600">
+            <h3 class="mb-5 text-5xl">Portfolio</h3>
+            <p class="mb-10 text-2xl text-gray-300">You are already here! I have experimented with different portfolio pages for myself.  
+              It's always interesting to try new layouts and designs.  This is the would be version 3 of my portfolio.  
+              I hope to keep a record of past and futures portfolios I create so I can see my progress.  
+              This version of my portfolio was created by using HTML and TailWindCSS.
+            </p>
+            <ul class="flex flex-row gap-4 text-4xl">
+              <li><i class="icon-html5"></i></li>
+              <li><i class="icon-css3"></i></li>
+              <li><i class="icon-reactjs"></i></li>
+            </ul>
+          </div>
+          <!-- Photo -->
+          <div class="w-1/2 ">
+            <img class="h-full w-full object-fill"src="images/Portfolio_Landing.png" alt="A picture of the portfolio landing page">
+            </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="w-5/6 h-3/5 flex flex-row justify-around border-2 border-solid border-yellow-700 rounded-lg">
+          <!-- Description -->
+          <div class="w-4/6 p-5 flex flex-col items-center justify-start text-yellow-600">
+            <h3 class="mb-5 text-5xl">Phonebook App</h3>
+            <p class="mb-10 text-2xl text-gray-300">
+              Following along with the full stack course provided by fullstackopen.com, I have been learning to create
+              single page web applications using the MERN stack.  I have created the front-end using Reactjs to display an interface 
+              where existing phonebook entries are shown as well as a form that lets you input new entries.  The back-end uses an Express server
+              running on the NodeJS runtime environment, and it handles the connection to a MongoDB database and the operations it performs such as 
+              the creation or update of an entry, or the deletion of an entry. 
+            </p>
+            <ul class="flex flex-row gap-4 text-4xl text-yellow-600">
+              <li><i class="icon-nodejs"></i></li>
+              <li><i class="icon-mongodb"></i></li>
+              <li><i class="icon-reactjs"></i></li>
+              <li><i class="icon-html5"></i></li>
+              <li><i class="icon-css3"></i></li>
+              
+            </ul>
+          </div>
+          <!-- Photo -->
+          <div class="w-1/2 ">
+            <img class="h-full w-full object-fill"src="images/Phonebook_App.png" alt="A picture of the portfolio landing page">
+            </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="w-5/6 h-3/5 flex flex-row justify-around border-2 border-solid border-yellow-700 rounded-lg">
+          <!-- Description -->
+          <div class="w-4/6 p-5 flex flex-col items-center justify-start text-yellow-600">
+            <h3 class="mb-5 text-5xl">React Homebase</h3>
+            <p class="mb-10 text-2xl text-gray-300">
+              I titled this project homebase because I have always liked the idea of having a base of operations where you can find anything you need.
+              My goal for this project is to have a productivity app that you can take along anywhere with you.  This app will provide the time and current
+              weather at your current location.  It also has a list so you can write down important notes throughout the day. I am looking forward to expanding the app
+              with more functionality in the future. 
+            </p>
+            <ul class="flex flex-row gap-4 text-4xl">
+              <li><i class="icon-html5"></i></li>
+              <li><i class="icon-css3"></i></li>
+              <li><i class="icon-reactjs"></i></li>
+            </ul>
+          </div>
+          <!-- Photo -->
+          <div class="w-1/2 ">
+            <img class="h-full w-full object-fill"src="images/React_Homebase.png" alt="A picture of the portfolio landing page">
+            </div>
+        </div>
+       
+        
+       
+      </div>
+    </div>
+  </div>
 </body>
 </html>
