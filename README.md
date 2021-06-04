@@ -3,11 +3,8 @@ $project
 
 $project was created to showcase my skills and past projects to the world.  This portfolio will be used to keep track of the projects I have created and display them.  
 
-Look how easy it is to use:
-
-    import project
-    # Get your stuff done
-    project.do_stuff()
+You can check out the current version: 
+    [www.ashermanli.github.io/Portfolio](Portfolio)
 
 Features
 --------
