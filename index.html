@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="tailwind.css">
-  <link rel="stylesheet" href="svg/font-mfizz-2.4.1/dist/font-mfizz.css">
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="stylesheet" href="src/tailwind.css">
+  <link rel="stylesheet" href="src/svg/font-mfizz-2.4.1/dist/font-mfizz.css">
   <title>Abraham S.</title>
 </head>
-<body class="m-0 font-Nunito bg-gray-800 text-gray-300">
+<body class="m-0 font-Nunito bg-matte-black text-gray-400">
   <!-- Root -->
   <div class="relative h-screen" id="root">
     <!-- Navigation Bar -->
@@ -25,13 +25,13 @@
       <!-- Socials svg container -->
       <div class="flex flex-row text-xl gap-x-5">
         <!-- Mail svg -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail stroke-current text-gray-400" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <rect x="3" y="5" width="18" height="14" rx="2" />
           <polyline points="3 7 12 13 21 7" />
         </svg>
         <!-- Linkedin svg -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin stroke-current text-gray-400" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <rect x="4" y="4" width="16" height="16" rx="2" />
           <line x1="8" y1="11" x2="8" y2="16" />
@@ -40,7 +40,7 @@
           <path d="M16 16v-3a2 2 0 0 0 -4 0" />
         </svg>
         <!-- Github svg -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github stroke-current text-gray-400" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
         </svg>
@@ -49,14 +49,14 @@
     <!-- Landing Page -->
     <div id="landing-page" class="w-full h-screen z-0 flex flex-col items-center justify-center pattern">
       <div>
-        <h1 class="text-8xl text-justify font-Nunito">Hi, I am a <span class="text-yellow-600">Abraham</span></h1>
+        <h1 class="text-8xl text-justify font-Nunito">Hi, I am a <span class="text-gold">Abraham</span></h1>
         <h2 class="text-6xl">An aspiring web developer</h2>
       </div>
     </div>
     <!-- About Me Section -->
     <div id="about_me" class="w-full h-5/6 z-0 flex flex-row justify-start">
       <div class="h-full w-2/3  mr-20 py-20">
-        <h2 class="text-6xl text-center"><span class="text-yellow-600">About </span>Me</h2>
+        <h2 class="text-6xl text-center"><span class="text-gold">About </span>Me</h2>
         <p class=" p-20 text-gray-100 text-3xl text-justify">I am an aspiring full stack web developer who graduated
           from The University of Texas at El Paso (UTEP) with a Bachelors in Computer Science.  Ever since i started
           my journey in computer science I have had a passion for web development.  I am constantly looking to 
@@ -68,22 +68,22 @@
       </div> 
       <!-- Portrait -->
       <div class="h-full w-1/4 py-20">
-        <img src="images/Abraham Saucedo466(cropped).jpg" alt="A picture of Abraham" class='w-full h-full border-2 border-yellow-600 rounded-xl object-cover object-top'>
+        <img src="src/images/Abraham Saucedo466(cropped).jpg" alt="A picture of Abraham" class='w-full h-full border-2 border-gold rounded-xl object-cover object-top'>
       </div>
     </div>
     <!-- Skills Section -->
     <div id="skills" class="block w-full h-screen py-20 z-0 ">
-      <h2 class="mb-5 text-gray-200 text-6xl text-center">My <span class="text-yellow-600">Skills</span></h2>
+      <h2 class="mb-5 text-gray-200 text-6xl text-center">My <span class="text-gold">Skills</span></h2>
       <div class=" w-full flex flex-col  items-center">
         <!-- Frontend -->
-        <h3 class="text-5xl text-yellow-600">Frontend</h3>
+        <h3 class="text-5xl text-gold">Frontend</h3>
         <div class="w-full p-5 h-40 mb-10 flex flex-row items-center justify-center gap-x-10 text-center">
             <i class="icon-html5 text-8xl"><p class="text-lg">HTML5</p></i>
             <i class="icon-css3 text-8xl "><p class="text-lg">CSS3</p></i>
             <i class="icon-javascript text-8xl "><p class="text-lg">Javascript</p></i>
             <i class="icon-reactjs text-8xl"><p class="text-lg">Reactjs</p></i>
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind" width="96" height="96" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind stroke-current text-gray-400" width="96" height="96" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" />
               </svg>
@@ -92,7 +92,7 @@
             <i class="icon-bootstrap text-8xl"><p class="text-lg">Bootstrap</p></i>
         </div>
         <!-- Backend -->
-        <h3 class="text-5xl text-yellow-600">Backend</h3>
+        <h3 class="text-5xl text-gold">Backend</h3>
         <div class="w-full p-5 h-40 mb-10 flex flex-row justify-center gap-x-10 text-center">
           <i class="icon-nodejs text-8xl"><p class="text-lg">Nodejs</p></i>
           <i class="icon-php text-8xl"><p class="text-lg">PHP</p></i>
@@ -101,7 +101,7 @@
           <i class="icon-mysql text-8xl"><p class="text-lg">MySQL</p></i>
         </div>
         <!-- Miscellaneous -->
-        <h3 class="text-5xl text-yellow-600">Miscellaneous</h3>
+        <h3 class="text-5xl text-gold">Miscellaneous</h3>
         <div class="w-full p-5 h-40 mb-10 flex flex-row justify-center gap-x-10 text-center">
           <i class="icon-git text-8xl"><p class="text-lg">Git</p></i>
           <i class="icon-npm text-8xl"><p class="text-lg">NPM</p></i>
@@ -112,13 +112,13 @@
     </div>
     <!-- Projects Section -->
     <div id="projects" class="relative w-full h-auto py-20">
-      <h2 class="mb-10 text-6xl text-center text-yellow-600">Projects</h2>
+      <h2 class="mb-10 text-6xl text-center text-gold">Projects</h2>
       <!-- Projects container -->
       <div class="w-full h-full flex flex-col gap-y-10 items-center">
         <!-- Project Card -->
-        <div class="w-5/6 h-3/5 flex flex-row justify-around border-2 border-solid border-yellow-700 rounded-lg">
+        <div class="w-5/6 h-3/5 flex flex-row justify-around border-2 border-solid border-gold rounded-lg">
           <!-- Description -->
-          <div class="w-4/6 p-5 flex flex-col items-center justify-start text-yellow-600">
+          <div class="w-4/6 p-5 flex flex-col items-center justify-start text-gold">
             <h3 class="mb-5 text-5xl">Portfolio</h3>
             <p class="mb-10 text-2xl text-gray-300">You are already here! I have experimented with different portfolio pages for myself.  
               It's always interesting to try new layouts and designs.  This is the would be version 3 of my portfolio.  
@@ -129,7 +129,7 @@
               <li><i class="icon-html5"></i></li>
               <li><i class="icon-css3"></i></li>
               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind" width="50 " height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgba(217,119,6,1)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind" width="50 " height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ccb400" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                   <path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" />
                 </svg>
@@ -138,14 +138,14 @@
           </div>
           <!-- Photo -->
           <div class="w-1/2 ">
-            <img class="h-full w-full object-fill"src="images/Portfolio_Landing.png" alt="A picture of the portfolio landing page">
+            <img class="h-full w-full object-fill"src="src/images/Portfolio_Landing.png" alt="A picture of the portfolio landing page">
             </div>
         </div>
 
         <!-- Project Card -->
-        <div class="w-5/6 h-3/5 flex flex-row justify-around border-2 border-solid border-yellow-700 rounded-lg">
+        <div class="w-5/6 h-3/5 flex flex-row justify-around border-2 border-solid border-gold rounded-lg">
           <!-- Description -->
-          <div class="w-4/6 p-5 flex flex-col items-center justify-start text-yellow-600">
+          <div class="w-4/6 p-5 flex flex-col items-center justify-start text-gold">
             <h3 class="mb-5 text-5xl">Phonebook App</h3>
             <p class="mb-10 text-2xl text-gray-300">
               Following along with the full stack course provided by fullstackopen.com, I have been learning to create
@@ -154,7 +154,7 @@
               running on the NodeJS runtime environment, and it handles the connection to a MongoDB database and the operations it performs such as 
               the creation or update of an entry, or the deletion of an entry. 
             </p>
-            <ul class="flex flex-row gap-4 text-4xl text-yellow-600">
+            <ul class="flex flex-row gap-4 text-4xl text-gold">
               <li><i class="icon-nodejs"></i></li>
               <li><i class="icon-mongodb"></i></li>
               <li><i class="icon-reactjs"></i></li>
@@ -165,14 +165,14 @@
           </div>
           <!-- Photo -->
           <div class="w-1/2 ">
-            <img class="h-full w-full object-fill"src="images/Phonebook_App.png" alt="A picture of the portfolio landing page">
+            <img class="h-full w-full object-fill"src="src/images/Phonebook_App.png" alt="A picture of the portfolio landing page">
             </div>
         </div>
 
         <!-- Project Card -->
-        <div class="w-5/6 h-3/5 flex flex-row justify-around border-2 border-solid border-yellow-700 rounded-lg">
+        <div class="w-5/6 h-3/5 flex flex-row justify-around border-2 border-solid border-gold rounded-lg">
           <!-- Description -->
-          <div class="w-4/6 p-5 flex flex-col items-center justify-start text-yellow-600">
+          <div class="w-4/6 p-5 flex flex-col items-center justify-start text-gold">
             <h3 class="mb-5 text-5xl">React Homebase</h3>
             <p class="mb-10 text-2xl text-gray-300">
               I titled this project homebase because I have always liked the idea of having a base of operations where you can find anything you need.
@@ -188,7 +188,7 @@
           </div>
           <!-- Photo -->
           <div class="w-1/2 ">
-            <img class="h-full w-full object-fill"src="images/React_Homebase.png" alt="A picture of the portfolio landing page">
+            <img class="h-full w-full object-fill"src="src/ images/React_Homebase.png" alt="A picture of the portfolio landing page">
             </div>
         </div>
        
@@ -197,8 +197,8 @@
       </div>
     </div>
     <!-- Contact Section -->
-    <div id="contact" class="py-20 relative w-full h-4/5  bg-gray-500">
-      <h2 class="mb-10 text-6xl text-center"><span class="text-yellow-600">Contact</span> Me</h2>
+    <div id="contact" class="py-20 relative w-full h-4/5  bg-gray-800">
+      <h2 class="mb-10 text-6xl text-center"><span class="text-gold">Contact</span> Me</h2>
       <ul class="h-4/5 flex flex-col gap-y-14 items-center justify-center text-gray-300 text-5xl">
         <li class="text-center">Email: <div class="text-center">Abrahamsauce4@gmail.com</div></li>
         <li><a href="https://www.github.com/ashermanli">Github</a></li>

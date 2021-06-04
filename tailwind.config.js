@@ -1,7 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 module.exports = {
-  
+
   purge:{
     content: ['./src/**/*/.html','./src/**/*/.js'],
     options:{
@@ -15,6 +15,8 @@ module.exports = {
         'Nunito': ['Nunito', ...defaultTheme.fontFamily.sans]
       }, 
       colors: {
+        'matte-black': '#1b1b1b',
+        'gold': '#ccb400',
         black: colors.black,
         gray: colors.trueGray,
         indigo: colors.indigo,

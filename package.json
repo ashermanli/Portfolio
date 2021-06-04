@@ -11,7 +11,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss-cli@latest build -o tailwind.css"
+    "dev": "npx tailwindcss-cli@latest build -o src/tailwind.css"
   },
   "repository": {
     "type": "git",
