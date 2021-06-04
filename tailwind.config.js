@@ -1,7 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 module.exports = {
-
   purge:{
     content: ['./src/**/*/.html','./src/**/*/.js'],
     options:{
@@ -11,6 +10,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImager:theme =>({
+        'hero-pattern': "url('/src/svg/circuit-board.svg')"
+      }),
       fontFamily: {
         'Nunito': ['Nunito', ...defaultTheme.fontFamily.sans]
       }, 
