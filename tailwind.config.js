@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 module.exports = {
   purge:{
-    content: ['./src/**/*/.html','./src/**/*/.js'],
+    content: ['./**/*/.html','./src/**/*/.js'],
     options:{
       safeList: ['bg-matte-black']
     }
