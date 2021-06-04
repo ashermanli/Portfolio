@@ -3,7 +3,7 @@
 
 This project was created to showcase my skills and past projects to the world.  This portfolio will be used to keep track of the projects I have created and display them.  
 
-You can check out the current version
+You can check out the current version here: 
 [Portfolio] (www.ashermanli.github.io/Portfolio)
 
 Features
