@@ -8,10 +8,14 @@
     "postcss": "^8.3.0",
     "tailwindcss": "^2.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss-cli@latest build -o src/tailwind.css"
+    "dev": "npx tailwindcss-cli@latest build src/styles.css -o src/tailwind.css",
+    "lint": "npx stylelint '**/*.css'"
   },
   "repository": {
     "type": "git",
