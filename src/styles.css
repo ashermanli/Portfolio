@@ -1,4 +1,23 @@
 @tailwind base;
+
+@layer base {
+    h1 {
+        @apply text-5xl sm:text-8xl;
+    }
+
+    h2 {
+        @apply text-4xl sm:text-5xl;
+    }
+
+    h3 {
+        @apply text-3xl;
+    }
+
+    i {
+        @apply text-5xl;
+    }
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -21,7 +40,7 @@ nav {
 }
 
 .skill-section {
-    @apply w-full p-5 h-40 mb-10 flex flex-row items-center justify-center gap-x-10 text-center;
+    @apply w-full p-5 h-40 mb-10 flex flex-row flex-wrap items-center justify-center gap-x-10 text-center;
 }
 
 .card {

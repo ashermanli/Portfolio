@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-screen w-full">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,27 +11,27 @@
   <link rel="stylesheet" href="src/svg/font-mfizz-2.4.1/dist/font-mfizz.css">
   <title>Abraham S.</title>
 </head>
-<body class="w-full m-0 font-Nunito bg-matte-black text-gray-400">
+<body class="w-full font-Nunito bg-matte-black text-gray-400">
   <!-- Root -->
   <div class="relative h-screen" id="root">
     <!-- Navigation Bar -->
-    <nav class="nav">
-      <ul class="w-auto flex flex-row  gap-8">
-        <li class=" text-5xl hover:text-gold"> <a href="#about_me">About Me</a></li>
-        <li class=" text-5xl hover:text-gold"><a href="#skills">Skills</a></li>
-        <li class=" text-5xl hover:text-gold"><a href="#projects">Projects</a></li>
-        <li class=" text-5xl hover:text-gold"><a href="#contact">Contact</a></li>
+    <nav>
+      <ul class="flex flex-row flex-wrap  gap-8">
+        <li class=" text-lg sm:text-5xl hover:text-gold"> <a href="#about_me">About Me</a></li>
+        <li class=" text-lg sm:text-5xl hover:text-gold"><a href="#skills">Skills</a></li>
+        <li class=" sm:text-5xl hover:text-gold"><a href="#projects">Projects</a></li>
+        <li class=" sm:text-5xl hover:text-gold"><a href="#contact">Contact</a></li>
       </ul>
       <!-- Socials svg container -->
       <div class="flex flex-row text-xl gap-x-5">
         <!-- Mail svg -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail hover:text-gold stroke-current text-gray-400" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail hover:text-gold stroke-current text-gray-400" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <rect x="3" y="5" width="18" height="14" rx="2" />
           <polyline points="3 7 12 13 21 7" />
         </svg>
         <!-- Linkedin svg -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin hover:text-gold stroke-current text-gray-400" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin hover:text-gold stroke-current text-gray-400" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <rect x="4" y="4" width="16" height="16" rx="2" />
           <line x1="8" y1="11" x2="8" y2="16" />
@@ -40,25 +40,25 @@
           <path d="M16 16v-3a2 2 0 0 0 -4 0" />
         </svg>
         <!-- Github svg -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github hover:text-gold stroke-current text-gray-400" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github hover:text-gold stroke-current text-gray-400" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
         </svg>
       </div>  
     </nav>
     <!-- Landing Page -->
-    <section id="landing-page" class="landing pattern text-white">
-      <div class='hero'>
-        <h1 class="text-8xl text-justify font-Nunito">Hi, I am <span class="text-gold">Abraham</span></h1>
-        <h2 class="text-6xl">An aspiring web developer</h2>
+    <section id="landing-page" class="w-full landing pattern text-white">
+      <div class='hero text-center'>
+        <h1>Hi, I am <span class="text-gold">Abraham</span></h1>
+        <h2>An aspiring web developer</h2>
       </div>
     </section>
     <!-- About Me Section -->
-    <section id="about_me" class="py-20 flex flex-row">
+    <section id="about_me" class="py-20 flex flex-col-reverse lg:flex-row items-center">
       <!-- Description -->
-      <div class="w-2/3  mr-20">
-        <h2 class="text-6xl text-center"><span class="text-gold">About </span>Me</h2>
-        <p class=" p-20 text-gray-100 text-3xl text-justify">I am an aspiring full stack web developer who graduated
+      <div class="w-5/6 lg:mr-20">
+        <h2 class="text-center"><span class="text-gold">About </span>Me</h2>
+        <p class=" text-lg md:p-10 sm:text-3xl text-justify">I am an aspiring full stack web developer who graduated
           from The University Of Texas At El Paso (UTEP) with a Bachelors in Computer Science.  Ever since i started
           my journey in computer science I have had a passion for web development.  I am constantly looking to 
           improve my knowledge and skills and apply what I learn into the pages and apps I create.  
@@ -68,21 +68,24 @@
         </p>
       </div> 
       <!-- Portrait -->
-      <div class="w-1/4">
-        <img src="src/images/Abraham Saucedo466(cropped).jpg" alt="A picture of Abraham" class='w-full h-full border-2 border-gold rounded-xl object-cover object-top'>
+      <div class="mb-10 lg:mb-0 relative w-1/2">
+      <img src="src/images/Abraham Saucedo466(cropped).jpg" 
+      alt="A picture of Abraham" 
+      class='border-2 border-gold rounded-xl object-cover object-top'>
       </div>
     </section>
     <!-- Skills Section -->
     <section id="skills" class="py-20">
-      <h2 class="mb-5 text-6xl text-center">My <span class="text-gold">Skills</span></h2>
-      <div class=" w-full flex flex-col  items-center text-5xl">
+      <h2 class="mb-5 text-center">My <span class="text-gold">Skills</span></h2>
+      <!-- Skills container -->
+      <div class=" w-full flex flex-col items-center">
         <!-- Frontend -->
-        <h3 class="text-gold">Frontend</h3>
+        <h3 class="text-gold my-5">Frontend</h3>
         <div class="skill-section">
-            <i class="icon-html5 text-8xl"><p class="text-lg">HTML5</p></i>
-            <i class="icon-css3 text-8xl "><p class="text-lg">CSS3</p></i>
-            <i class="icon-javascript text-8xl "><p class="text-lg">Javascript</p></i>
-            <i class="icon-reactjs text-8xl"><p class="text-lg">Reactjs</p></i>
+            <i class="icon-html5"><p class="text-lg">HTML5</p></i>
+            <i class="icon-css3"><p class="text-lg">CSS3</p></i>
+            <i class="icon-javascript"><p class="text-lg">Javascript</p></i>
+            <i class="icon-reactjs"><p class="text-lg">Reactjs</p></i>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind stroke-current text-gray-400" width="96" height="96" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d1d5db" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -90,37 +93,37 @@
               </svg>
               <p class="text-lg">TailwindCSS</p>
             </div>
-            <i class="icon-bootstrap text-8xl"><p class="text-lg">Bootstrap</p></i>
+            <i class="icon-bootstrap"><p class="text-lg">Bootstrap</p></i>
         </div>
         <!-- Backend -->
-        <h3 class="text-gold">Backend</h3>
+        <h3 class="text-gold my-5">Backend</h3>
         <div class="skill-section">
-          <i class="icon-nodejs text-8xl"><p class="text-lg">Nodejs</p></i>
-          <i class="icon-php text-8xl"><p class="text-lg">PHP</p></i>
-          <i class="icon-python text-8xl"><p class="text-lg">Python</p></i>
-          <i class="icon-mongodb text-8xl"><p class="text-lg">MongoDB</p></i>
-          <i class="icon-mysql text-8xl"><p class="text-lg">MySQL</p></i>
+          <i class="icon-nodejs"><p class="text-lg">Nodejs</p></i>
+          <i class="icon-php"><p class="text-lg">PHP</p></i>
+          <i class="icon-python"><p class="text-lg">Python</p></i>
+          <i class="icon-mongodb"><p class="text-lg">MongoDB</p></i>
+          <i class="icon-mysql"><p class="text-lg">MySQL</p></i>
         </div>
         <!-- Miscellaneous -->
-        <h3 class="text-gold">Miscellaneous</h3>
+        <h3 class="text-gold my-5">Miscellaneous</h3>
         <div class="skill-section">
-          <i class="icon-git text-8xl"><p class="text-lg">Git</p></i>
-          <i class="icon-npm text-8xl"><p class="text-lg">NPM</p></i>
-          <i class="icon-ubuntu text-8xl"><p class="text-lg">Ubuntu</p></i>
-          <i class="icon-heroku text-8xl"><p class="text-lg">Heroku</p></i>
+          <i class="icon-git"><p class="text-lg">Git</p></i>
+          <i class="icon-npm"><p class="text-lg">NPM</p></i>
+          <i class="icon-ubuntu"><p class="text-lg">Ubuntu</p></i>
+          <i class="icon-heroku"><p class="text-lg">Heroku</p></i>
         </div>
       </div>
     </section>
     <!-- Projects Section -->
     <section id="projects" class="py-20">
-      <h2 class="mb-10 text-6xl text-center text-gold">Projects</h2>
+      <h2 class="mb-10 text-center text-gold">Projects</h2>
       <!-- Projects container -->
       <div class="w-full flex flex-col gap-y-10 items-center">
         <!-- Project Card -->
         <div class="card">
           <!-- Description -->
           <div class="card-description">
-            <h3 class="mb-5 text-5xl">Portfolio</h3>
+            <h3 class="mb-5">Portfolio</h3>
             <ul class="flex flex-row items-center gap-4 text-4xl">
               <li><i class="icon-html5"></i></li>
               <li><i class="icon-css3"></i></li>
@@ -148,7 +151,7 @@
         <div class="card">
           <!-- Description -->
           <div class="card-description">
-            <h3 class="mb-5 text-5xl">Phonebook App</h3>
+            <h3 class="mb-5">Phonebook App</h3>
             <ul class="flex flex-row gap-4 text-4xl text-gold">
               <li><i class="icon-nodejs"></i></li>
               <li><i class="icon-mongodb"></i></li>
@@ -176,7 +179,7 @@
         <div class="card">
           <!-- Description -->
           <div class="card-description">
-            <h3 class="mb-5 text-5xl">React Homebase</h3>
+            <h3 class="mb-5">React Homebase</h3>
             <ul class="flex flex-row gap-4 text-4xl">
               <li><i class="icon-html5"></i></li>
               <li><i class="icon-css3"></i></li>
@@ -201,7 +204,7 @@
       </div>
     </section>
     <!-- Contact Section -->
-    <section id="contact" class="h-4/5 py-20 bg-gray-600 text-5xl">
+    <section id="contact" class="h-4/5 py-20 bg-gray-600 text-2xl">
       <h2 class="text-6xl text-center"><span class="text-gold">Contact</span> Me</h2>
       <ul class="h-4/5 flex flex-col gap-y-14 items-center justify-center">
         <li class="hover:text-gold">AbrahamGSaucedo@Gmail.com</li>
