@@ -1,12 +1,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 module.exports = {
-  purge:{
-    content: ['./**/*/.html','./src/**/*/.js'],
-    options:{
-      safeList: ['bg-matte-black']
-    }
-  } ,
+  
+  purge:['./**/*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
