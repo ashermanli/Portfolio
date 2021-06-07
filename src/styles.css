@@ -14,7 +14,11 @@
     }
 
     i {
-        @apply text-5xl;
+        @apply text-5xl lg:text-8xl;
+    }
+
+    li > i {
+        @apply text-4xl;
     }
 }
 
@@ -44,11 +48,11 @@ nav {
 }
 
 .card {
-    @apply w-5/6 h-3/5 flex flex-row border-2 border-solid border-gold rounded-lg;
+    @apply w-5/6 h-3/5 flex flex-col-reverse lg:flex-row items-center border-2 border-solid border-gold rounded-lg;
 }
 
 .card-description {
-    @apply w-4/6 p-5 flex flex-col items-center justify-start text-gold;
+    @apply p-5 flex flex-col items-center justify-start text-justify text-gold;
 }
 
 .card-photo {

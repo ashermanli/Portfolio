@@ -16,11 +16,11 @@
   <div class="relative h-screen" id="root">
     <!-- Navigation Bar -->
     <nav>
-      <ul class="flex flex-row flex-wrap  gap-8">
-        <li class=" text-lg sm:text-5xl hover:text-gold"> <a href="#about_me">About Me</a></li>
-        <li class=" text-lg sm:text-5xl hover:text-gold"><a href="#skills">Skills</a></li>
-        <li class=" sm:text-5xl hover:text-gold"><a href="#projects">Projects</a></li>
-        <li class=" sm:text-5xl hover:text-gold"><a href="#contact">Contact</a></li>
+      <ul class="flex flex-row flex-nowrap text-sm sm:text-5xl gap-4 lg:gap-8">
+        <li class="hover:text-gold"> <a href="#about_me">About Me</a></li>
+        <li class="hover:text-gold"><a href="#skills">Skills</a></li>
+        <li class="hover:text-gold"><a href="#projects">Projects</a></li>
+        <li class="hover:text-gold"><a href="#contact">Contact</a></li>
       </ul>
       <!-- Socials svg container -->
       <div class="flex flex-row text-xl gap-x-5">
@@ -58,7 +58,7 @@
       <!-- Description -->
       <div class="w-5/6 lg:mr-20">
         <h2 class="text-center"><span class="text-gold">About </span>Me</h2>
-        <p class=" text-lg md:p-10 sm:text-3xl text-justify">I am an aspiring full stack web developer who graduated
+        <p class=" text-lg text-justify md:p-10 sm:text-xl lg:text-2xl xl:text-3xl ">I am an aspiring full stack web developer who graduated
           from The University Of Texas At El Paso (UTEP) with a Bachelors in Computer Science.  Ever since i started
           my journey in computer science I have had a passion for web development.  I am constantly looking to 
           improve my knowledge and skills and apply what I learn into the pages and apps I create.  
@@ -68,19 +68,19 @@
         </p>
       </div> 
       <!-- Portrait -->
-      <div class="mb-10 lg:mb-0 relative w-1/2">
+      <div class="lg:p-10  mb-10 lg:mb-0 relative w-2/3 sm:w-1/2 md:w-1/3 flex-shrink-0">
       <img src="src/images/Abraham Saucedo466(cropped).jpg" 
       alt="A picture of Abraham" 
       class='border-2 border-gold rounded-xl object-cover object-top'>
       </div>
     </section>
     <!-- Skills Section -->
-    <section id="skills" class="py-20">
-      <h2 class="mb-5 text-center">My <span class="text-gold">Skills</span></h2>
+    <section id="skills" class="py-10 sm:py-20">
+      <h2 class="text-center">My <span class="text-gold">Skills</span></h2>
       <!-- Skills container -->
       <div class=" w-full flex flex-col items-center">
         <!-- Frontend -->
-        <h3 class="text-gold my-5">Frontend</h3>
+        <h3 class="text-gold my-5 lg:text-5xl">Frontend</h3>
         <div class="skill-section">
             <i class="icon-html5"><p class="text-lg">HTML5</p></i>
             <i class="icon-css3"><p class="text-lg">CSS3</p></i>
@@ -96,7 +96,7 @@
             <i class="icon-bootstrap"><p class="text-lg">Bootstrap</p></i>
         </div>
         <!-- Backend -->
-        <h3 class="text-gold my-5">Backend</h3>
+        <h3 class="text-gold my-5 lg:text-5xl">Backend</h3>
         <div class="skill-section">
           <i class="icon-nodejs"><p class="text-lg">Nodejs</p></i>
           <i class="icon-php"><p class="text-lg">PHP</p></i>
@@ -105,7 +105,7 @@
           <i class="icon-mysql"><p class="text-lg">MySQL</p></i>
         </div>
         <!-- Miscellaneous -->
-        <h3 class="text-gold my-5">Miscellaneous</h3>
+        <h3 class="text-gold my-5 lg:text-5xl">Miscellaneous</h3>
         <div class="skill-section">
           <i class="icon-git"><p class="text-lg">Git</p></i>
           <i class="icon-npm"><p class="text-lg">NPM</p></i>
@@ -120,9 +120,9 @@
       <!-- Projects container -->
       <div class="w-full flex flex-col gap-y-10 items-center">
         <!-- Project Card -->
-        <div class="card">
+        <div class="card items-center">
           <!-- Description -->
-          <div class="card-description">
+          <div class="card-description text-justify">
             <h3 class="mb-5">Portfolio</h3>
             <ul class="flex flex-row items-center gap-4 text-4xl">
               <li><i class="icon-html5"></i></li>
@@ -134,7 +134,7 @@
                 </svg>
               </li>
             </ul>
-            <p class="mb-10 text-2xl text-gray-300">You are already here! I have experimented with different portfolio pages for myself.  
+            <p class="mb-10 text-lg text-gray-300">You are already here! I have experimented with different portfolio pages for myself.  
               It's always interesting to try new layouts and designs.  This is the would be version 3 of my portfolio.  
               I hope to keep a record of past and futures portfolios I create so I can see my progress.  
               This version of my portfolio was created by using HTML and TailWindCSS.
@@ -142,7 +142,7 @@
             
           </div>
           <!-- Photo -->
-          <div class="w-1/2 p-10">
+          <div class="w-full lg:w-1/2 p-5 md:p-10 flex-shrink-0">
             <img class="card-photo"src="src/images/Portfolio_Landing.png" alt="A picture of the portfolio landing page">
             </div>
         </div>
@@ -160,7 +160,7 @@
               <li><i class="icon-css3"></i></li>
               
             </ul>
-            <p class="mb-10 text-2xl text-gray-300">
+            <p class="mb-10 text-lg text-gray-300">
               Following along with the full stack course provided by fullstackopen.com, I have been learning to create
               single page web applications using the MERN stack.  I have created the front-end using Reactjs to display an interface 
               where existing phonebook entries are shown as well as a form that lets you input new entries.  The back-end uses an Express server
@@ -170,7 +170,7 @@
             
           </div>
           <!-- Photo -->
-          <div class="w-1/2 p-10">
+          <div class="w-full lg:w-1/2 p-5 md:p-10 flex-shrink-0">
             <img class="card-photo"src="src/images/Phonebook_App.png" alt="A picture of the portfolio landing page">
             </div>
         </div>
@@ -185,7 +185,7 @@
               <li><i class="icon-css3"></i></li>
               <li><i class="icon-reactjs"></i></li>
             </ul>
-            <p class="mb-10 text-2xl text-gray-300">
+            <p class="mb-10 text-lg text-gray-300">
               I titled this project homebase because I have always liked the idea of having a base of operations where you can find anything you need.
               My goal for this project is to have a productivity app that you can take along anywhere with you.  This app will provide the time and current
               weather at your current location.  It also has a list so you can write down important notes throughout the day. I am looking forward to expanding the app
@@ -194,7 +194,7 @@
             
           </div>
           <!-- Photo -->
-          <div class="w-1/2 p-10">
+          <div class="w-full lg:w-1/2 p-5 md:p-10 flex-shrink-0">
             <img class="card-photo"src="src/images/React_Homebase.png" alt="A picture of the portfolio landing page">
             </div>
         </div>
@@ -204,7 +204,7 @@
       </div>
     </section>
     <!-- Contact Section -->
-    <section id="contact" class="h-4/5 py-20 bg-gray-600 text-2xl">
+    <section id="contact" class="h-4/5 py-20 bg-gray-600 text-2xl md:text-5xl">
       <h2 class="text-6xl text-center"><span class="text-gold">Contact</span> Me</h2>
       <ul class="h-4/5 flex flex-col gap-y-14 items-center justify-center">
         <li class="hover:text-gold">AbrahamGSaucedo@Gmail.com</li>
