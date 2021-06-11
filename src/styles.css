@@ -56,5 +56,5 @@ nav {
 }
 
 .card-photo {
-    @apply h-full w-full object-fill border-2 border-gold rounded;
+    @apply h-full w-full object-fill border-[1px] border-gold rounded;
 }
